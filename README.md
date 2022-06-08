@@ -4,4 +4,4 @@
 
  #TODO
 
- * 
+ * check foreach memory problem
