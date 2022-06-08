@@ -6,6 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, and Greenfoot)
  */
 public class Piano extends World
 {
+    // Definition for the keyboard keys and soundfiles
     private String[] whiteKeys = { "a", "s", "d", "f", "g", "h", "j", "k", "l", "ö", "ä", "#" };
     private String[] whiteNotes = { "3c", "3d", "3e", "3f", "3g", "3a", "3b", "4c", "4d", "4e", "4f", "4g" }; 
     private String[] blackKeys = { "w", "e", "", "t", "z","u", "", "o", "p", "", "+" };
@@ -21,6 +22,9 @@ public class Piano extends World
         makeBlackKeys();
     }
 
+    /**
+     * Creates white keys for every element in whiteKeys[] and spaces them.
+     */
     public void makeWhiteKeys()
     {
         // int i = 0;
@@ -38,6 +42,9 @@ public class Piano extends World
         }
     }
 
+    /**
+     * Creates black keys for every element in blackKeys[] and spaces them.
+     */
     public void makeBlackKeys()
     {
         // int i = 0;
@@ -52,7 +59,7 @@ public class Piano extends World
         {
             if (!blackKeys[i].equals(""))   {
                 BlackKey key = new BlackKey(blackKeys[i], blackNotes[i] + ".wav");
-                addObject(key, i*85 + 54, 86);
+                addObject(key, i*63 + 85, 86);
             }
         }
     }

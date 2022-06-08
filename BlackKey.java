@@ -23,6 +23,9 @@ public class BlackKey extends Actor
         checkKeyDown();
     }
 
+    /**
+     * Checks if a key is pressed and updates the image and plays the matching sound.
+     */
     public void checkKeyDown()
     {
         if (!isDown && Greenfoot.isKeyDown(key))    {

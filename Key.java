@@ -1,4 +1,4 @@
-    import greenfoot.*;  // (World, Actor, GreenfootImage, and Greenfoot)
+import greenfoot.*;  // (World, Actor, GreenfootImage, and Greenfoot)
 
 public class Key extends Actor
 {
@@ -23,6 +23,9 @@ public class Key extends Actor
         checkKeyDown();
     }
 
+    /**
+     * Checks if a key is pressed and updates the image and plays the matching sound.
+     */
     public void checkKeyDown()
     {
         if (!isDown && Greenfoot.isKeyDown(key))    {
